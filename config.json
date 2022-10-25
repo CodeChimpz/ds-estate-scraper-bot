@@ -1,0 +1,8 @@
+{
+  "scheduler":{
+    "minutes": 1
+  },
+  "ds": {
+    "max_per_page": 5
+  }
+}
