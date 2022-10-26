@@ -49,6 +49,9 @@ module.exports = {
                         return {templ,embed}
                     }
                     //
+                    if (!data.length){
+                        await interaction.followUp('Nothing was found :(')
+                    }
                     for (const apartment of data) {
                         const response = ApartmentToSend(apartment)
                         await interaction.followUp({ content:response.templ,embeds:[response.embed]})
