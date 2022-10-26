@@ -1,0 +1,1 @@
+exports.format = require('./format-textContent')

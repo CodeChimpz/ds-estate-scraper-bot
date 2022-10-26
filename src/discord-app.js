@@ -8,8 +8,10 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
+//a greeting mb
+// client.on('',()=>{
 //
-//todo: greeting on user arrival
+// })
 
 //register event handlers from custom commands
 const handlers = Object.values(require('./discord/commands')).map((comm) => {

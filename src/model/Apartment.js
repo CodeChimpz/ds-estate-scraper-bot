@@ -1,10 +1,6 @@
 const Mongoose = require('mongoose')
 const appartmentSchema = new Mongoose.Schema({
     //Required
-    label: {
-        type: String,
-        required: true
-    },
     price: {
         type: String,
         required: true
@@ -15,10 +11,6 @@ const appartmentSchema = new Mongoose.Schema({
     },
     area: {
         type: String,
-    },
-    minimal: {
-        type: String,
-        required: false
     },
     img: [{
         type: String,
@@ -36,6 +28,12 @@ const appartmentSchema = new Mongoose.Schema({
         required: true,
     },
     //Additional
+    label: {
+        type: String,
+    },
+    minimal: {
+        type: String,
+    },
     city: {
         type: String,
     },
