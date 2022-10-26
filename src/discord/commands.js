@@ -2,8 +2,8 @@ const fs = require('fs').promises
 const path = require('path')
 const {SlashCommandBuilder, EmbedBuilder, AttachmentBuilder,  Events} = require('discord.js')
 
-const config = require('../../../config.json')
-const Apartment = require('../../model/Apartment')
+const config = require('../../config.json')
+const Apartment = require('../model/Apartment')
 
 //
 module.exports = {

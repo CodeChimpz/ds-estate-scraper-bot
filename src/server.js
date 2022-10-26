@@ -2,7 +2,7 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 const ds_app = require('./discord-app')
 //Import writer scheduler
-const writer = require('./parser/writer');
+const writer = require('./writer');
 
 (async () => {
     mongoose.connect(process.env["MONGO_URI"])

@@ -1,10 +1,10 @@
 const {ToadScheduler, SimpleIntervalJob, AsyncTask} = require('toad-scheduler')
 const path = require('path')
 
-const parsers = require('./parser-implement')
+const parsers = require('./parser/parser-implement')
 const config = require(path.join('./', '..', '..', 'config.json'))
 
-const Apartment = require('../model/Apartment')
+const Apartment = require('./model/Apartment')
 const scheduler = new ToadScheduler()
 
 const task = new AsyncTask('parse`n`write', async () => {
